@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="Imgaes\Vector.png" type="Vector.png" />
+
+    <title>المحفظة</title>
+  </head>
+  <body>
+    <div id="Wallet">
+      <div class="container">
+        <div class="title"><h1>المحفظة</h1></div>
+        <!-- Card 1 -->
+        <div class="card1" id="section">
+          <div class="flexColumn">
+            <h2>إجمالي الدخل</h2>
+            <p>20,3200 <span>SAR</span></p>
+          </div>
+          <div><img src="Imgaes\wallet.png" alt="wallet" /></div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card2" id="section">
+          <div class="flexRow">
+            <div class="innerCard">
+              <div class="flexColumn">
+                <h2>عدد المشتركين</h2>
+                <p>32 <span>SAR</span></p>
+              </div>
+              <img src="Imgaes\followers-number.png" alt="followers-number" />
+            </div>
+
+            <div class="innerCard">
+              <div class="flexColumn">
+                <h2>الارباح</h2>
+                <p>2000 <span>SAR</span></p>
+              </div>
+              <img src="Imgaes\dollar-banknotes.png" alt="dollar-banknotes" />
+            </div>
+
+            <div><img src="Imgaes\user.png" alt="user" /></div>
+          </div>
+
+          <div class="flexColumn">
+            <label for="link">الرابط المشاركة الخاص بك</label>
+            <div class="flexRow">
+              <button type="submit">نسخ الرابط</button>
+              <input
+                type="text"
+                id="link"
+                placeholder="https://ustudy.com/invite/dic/sarayasser"
+              />
+            </div>
+
+            <label>
+              احصل على 10 ريال<span>
+                <img src="Imgaes\dollar-banknotes.png" alt="dollar-banknotes"
+              /></span>
+              لكل مشاركة
+            </label>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card3" id="section">
+          <h2>المشاركين</h2>
+
+          <!-- Table -->
+          <div class="table">
+            <div class="flexRow">
+              <h5 class="cell">التاريخ</h5>
+              <h5 class="cell">الارباح من المستخدم</h5>
+              <h5 class="cell" style="text-align: right">الاسم</h5>
+            </div>
+            <div class="row">
+              <h5 class="cell">23-5-2024</h5>
+              <h5 class="cell">10 SR</h5>
+              <h5 class="flexRow">
+                سمايه محمد
+                <span>
+                  <img src="Imgaes\سمايه محمد .png" alt="سمايه محمد  " />
+                </span>
+              </h5>
+            </div>
+            <div class="row">
+              <h5 class="cell">23-5-2024</h5>
+              <h5 class="cell">10 SR</h5>
+              <h5 class="flexRow">
+                ياسمين ياسر
+                <span>
+                  <img src="Imgaes\ياسمين ياسر.png" alt="ياسمين ياسر" />
+                </span>
+              </h5>
+            </div>
+            <div class="row">
+              <h5 class="cell">23-5-2024</h5>
+              <h5 class="cell">10 SR</h5>
+              <h5 class="flexRow">
+                سلمي إسماعيل
+                <span>
+                  <img src="Imgaes\سلمي إسماعيل.png" alt="سلمي إسماعيل " />
+                </span>
+              </h5>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div class="pagination">
+            <div class="page-item">
+              <a href="#" class="page-link disabled">
+                <img src="Imgaes\PreviuosArrow.png" alt="PreviuosArrow.png" />
+              </a>
+            </div>
+            <div class="page-item">
+              <a href="#" class="page-link active">1</a>
+            </div>
+            <div class="page-item">
+              <a href="#" class="page-link">2</a>
+            </div>
+            <div class="page-item">
+              <a href="#" class="page-link">3</a>
+            </div>
+            <div class="page-item">
+              <a href="#" class="page-link">4</a>
+            </div>
+            <div class="page-item">...</div>
+
+            <div class="page-item">
+              <a href="#" class="page-link">8</a>
+            </div>
+            <div class="page-item">
+              <a href="#" class="page-link"
+                ><img src="Imgaes\NextArrow.png" alt="NextArrow"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

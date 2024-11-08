@@ -4,329 +4,136 @@
   padding: 0;
 }
 
-body {
-  background-color: #f9f9f9;
-  font-family: "Alexandria";
+body,
+html {
+  background-color: #ffffff;
+  font-family: "Alexandria", "Arial";
 }
 
-#Wallet .title {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 93px;
-  height: 36px;
-  top: 119px;
-  left: 923px;
-  margin: 4% 0;
+#congratulations .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
-#Wallet h1 {
-  position: absolute;
-  right: 140%;
-  bottom: 300%;
-  font-family: Almarai;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 36px;
-  letter-spacing: -0.011em;
-}
-#Wallet h2 {
-  font-family: Alexandria;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
-  text-align: right;
-  padding: 10px 10px;
-}
-#Wallet h5 {
-  font-family: Alexandria;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 21px;
-  letter-spacing: -0.011em;
-  color: #1a202c;
-}
-#Wallet p {
-  font-family: Alexandria;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 24px;
-  text-align: right;
-}
-#Wallet span {
-  font-family: Alexandria;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
-  text-align: right;
-}
-#Wallet .container {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-#Wallet #section {
-  margin-top: 1%;
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  border: 1px solid #e0e0e0;
-  opacity: 0px;
-}
-#Wallet .card1 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-  width: 895px;
-  top: 345px;
-  left: 118px;
-  height: 157px;
-}
-#Wallet .card2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 895px;
-  height: 348px;
-  top: 363px;
-  left: 121px;
-  gap: 0px;
-  opacity: 0px;
-}
-#Wallet .flexColumn {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-#Wallet .flexRow {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-  gap: 5%;
-  width: 100%;
-  padding: 0 5px;
-}
-#Wallet .innerCard {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #d8dde7;
-  width: 315px;
-  height: 123px;
-  top: 408px;
-  left: 492px;
-  gap: 0px;
-  border-radius: 10px 0px 0px 0px;
-  opacity: 0px;
-}
-#Wallet button {
-  display: block;
-  text-wrap: nowrap;
-  background-color: #2285fc;
-  color: white;
-  font-size: 20px;
-  width: Fixed 164px px;
-  height: Fixed 56px px;
-  top: 585px;
-  left: 155px;
-  padding: 2% 5%;
-  border-radius: 5px;
-  font-family: Alexandria;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 32px;
+#congratulations .container {
+  width: Fixed 706px px;
+  height: Fixed 565px px;
+  max-width: 880px;
+  max-height: 720px;
+  font-family: Arial, sans-serif;
   text-align: center;
-  border: none;
+  padding: 16px;
+  gap: 16px;
+  border-radius: 12px;
+  opacity: 0px;
+  background-color: white;
+  z-index: 2;
+}
+#congratulations .flexColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#congratulations .Exit-image {
+  width: 24px;
+  height: 24px;
+  top: 8px;
+  left: 8px;
+  gap: 0px;
+  opacity: 0px;
+}
+#congratulations .Exit-image img {
+  width: 13.15px;
+  height: 13.15px;
+  top: 5.42px;
+  left: 5.43px;
+  gap: 0px;
+  opacity: 0px;
   cursor: pointer;
 }
-#Wallet input {
-  width: 600px;
-  height: 56px;
-  top: 585px;
-  left: 332px;
-  gap: 0px;
-  border-radius: 9px;
-  opacity: 0px;
-  padding: 0 10%;
-  border: 2px solid #cbd2e0;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-}
-#Wallet input::-moz-placeholder {
-  width: 399px;
-  height: 26px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: Alexandria;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center;
-  color: #1a202c;
-}
-#Wallet input::placeholder {
-  width: 399px;
-  height: 26px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: Alexandria;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center;
-  color: #1a202c;
-}
-#Wallet label {
-  font-family: Alexandria;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 24px;
-  text-align: right;
-  color: #858585;
-}
-#Wallet .card3 {
-  width: 895px;
-  height: 349px;
-  top: 728px;
-  left: 121px;
-  gap: 0px;
-  opacity: 0px;
-  color: #2285fc;
-  margin-bottom: 10%;
-}
-#Wallet .table {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: end;
-  width: 100%;
-  padding: 0 2%;
-}
-#Wallet .row {
+#congratulations .image {
   display: flex;
   flex-direction: row;
-  margin: 3px 0;
-  border: 2px solid rgba(203, 210, 224, 0.3098039216);
-  border-radius: 9px;
-  width: 100%;
-}
-#Wallet .cell {
-  padding: 16px 10px;
-  width: 100%;
-  text-align: left;
-}
-#Wallet .pagination {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: Hug 268px px;
-  height: Hug 32px px;
-  top: 1032px;
-  left: 421px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+#congratulations .image img {
+  width: 196px;
+  height: 201px;
+  gap: 0px;
+  opacity: 0px;
+}
+#congratulations .text {
+  width: Fixed 424px px;
+  height: Hug 24px px;
+  gap: 0px;
+  opacity: 0px;
+}
+#congratulations h1 {
+  width: 424px;
+  height: 24px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "Alexandria", "Arial";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #262626;
+}
+#congratulations .page-link {
+  width: Fixed 396px px;
+  height: Hug 24px px;
   gap: 8px;
   opacity: 0px;
 }
-#Wallet .page-item {
-  margin: 0 5px;
-  width: Hug 188px px;
-  height: Hug 32px px;
-  gap: 4px;
-  opacity: 0px;
-  padding: 10px 0px 0px 0px;
-  color: #262626;
-}
-#Wallet .page-link {
-  display: block;
-  padding: 8px 12px;
+#congratulations .link {
   text-decoration: none;
-  width: Fixed 32px px;
-  height: Fixed 32px px;
-  font-family: Alexandria;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  text-align: left;
   color: #262626;
+  transition: color 0.3s ease, transform 0.3s ease;
+  width: 396px;
+  height: 24px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "Alexandria", "Arial";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  align-items: center;
 }
-#Wallet .page-link:hover {
-  background-color: #2285fc;
-  color: white;
-  transition: background-color 0.5s, color 0.5s;
-  font-weight: bold;
-  border-radius: 50%;
+#congratulations .link:hover {
+  color: #2285fc;
+  transform: scale(1.1);
 }
-#Wallet .page-link.active {
-  background: #262626;
-  color: white;
-  font-weight: bold;
-  gap: 10px;
-  border-radius: 50%;
-}
-#Wallet .page-link.disabled {
-  color: #ccc;
-  cursor: not-allowed;
-  pointer-events: none;
-}
-@media (max-width: 1200px) {
-  #Wallet {
-    padding: 0 20px;
-  }
-  #Wallet h1 {
-    font-size: 4vw;
-  }
-  #Wallet h2 {
-    font-size: 3.5vw;
-  }
-  #Wallet p,
-  #Wallet h5 {
-    font-size: 2vw;
-  }
-  #Wallet span {
-    font-size: 1.2vw;
-  }
+#congratulations .link:active {
+  color: #e74c3c;
 }
 @media (max-width: 768px) {
-  #Wallet {
-    padding: 0 10px;
-  }
-  #Wallet h1 {
-    font-size: 6vw;
-  }
-  #Wallet h2 {
-    font-size: 5vw;
-  }
-  #Wallet p,
-  #Wallet h5 {
-    font-size: 4vw;
-  }
-  #Wallet span {
-    font-size: 2vw;
+  #congratulations .container {
+    width: 60%;
   }
 }
-@media (max-width: 480px) {
-  #Wallet {
-    padding: 0 5px;
+@media (max-width: 768px) and (max-width: 480px) {
+  #congratulations .container {
+    width: 50%;
   }
-  #Wallet h1 {
-    font-size: 8vw;
+  #congratulations h1 {
+    font-size: 13px;
   }
-  #Wallet h2 {
-    font-size: 7vw;
-  }
-  #Wallet p,
-  #Wallet h5 {
-    font-size: 6vw;
-  }
-  #Wallet span {
-    font-size: 3vw;
+  #congratulations link {
+    font-size: 13px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,344 +1,151 @@
-$body-color: #f9f9f9;
-$body-font: "Alexandria";
+$body-color: #ffffff;
+$body-font: "Alexandria", "Arial";
 $primary-color: #2285fc;
-$button-textColor: #ffff;
+$secondary-color: #262626;
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-body {
+body,
+html {
   background-color: $body-color;
   font-family: $body-font;
 }
-#Wallet {
-  .title {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 93px;
-    height: 36px;
-    top: 119px;
-    left: 923px;
-    margin: 4% 0;
-  }
-  h1 {
-    position: absolute;
-    right: 140%;
-    bottom: 300%;
-    font-family: Almarai;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: -0.011em;
+
+#congratulations {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: -1;
   }
 
-  h2 {
-    font-family: Alexandria;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: right;
-    padding: 10px 10px;
-  }
-  h5 {
-    font-family: Alexandria;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 21px;
-    letter-spacing: -0.011em;
-    color: #1a202c;
-  }
-  p {
-    font-family: Alexandria;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 24px;
-    text-align: right;
-  }
-
-  span {
-    font-family: Alexandria;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: right;
-  }
   .container {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-  #section {
-    margin-top: 1%;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-    border: 1px solid #e0e0e0;
+    width: Fixed (706px) px;
+    height: Fixed (565px) px;
+    max-width: 880px;
+    max-height: 720px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 16px;
+    gap: 16px;
+    border-radius: 12px;
     opacity: 0px;
+    background-color: #ffff;
+    z-index: 2;
   }
 
-  .card1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: end;
-    width: 895px;
-    top: 345px;
-    left: 118px;
-    height: 157px;
-  }
-  .card2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 895px;
-    height: 348px;
-    top: 363px;
-    left: 121px;
-    gap: 0px;
-    opacity: 0px;
-  }
   .flexColumn {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-  }
-  .flexRow {
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: end;
-    gap: 5%;
-    width: 100%;
-    padding: 0 5px;
+    justify-content: center;
   }
-  .innerCard {
+  .Exit-image {
+    width: 24px;
+    height: 24px;
+    top: 8px;
+    left: 8px;
+    gap: 0px;
+    opacity: 0px;
+    img {
+      width: 13.15px;
+      height: 13.15px;
+      top: 5.42px;
+      left: 5.43px;
+      gap: 0px;
+      opacity: 0px;
+      cursor: pointer;
+    }
+  }
+  .image {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border: 1px solid #d8dde7;
-    width: 315px;
-    height: 123px;
-    top: 408px;
-    left: 492px;
-    gap: 0px;
-    border-radius: 10px 0px 0px 0px;
-    opacity: 0px;
+    margin: 0 auto;
+    width: 100%;
+    img {
+      width: 196px;
+      height: 201px;
+      gap: 0px;
+      opacity: 0px;
+    }
   }
 
-  button {
-    display: block;
-    text-wrap: nowrap;
-    background-color: $primary-color;
-    color: #ffff;
-    font-size: 20px;
-    width: Fixed (164px) px;
-    height: Fixed (56px) px;
-    top: 585px;
-    left: 155px;
-    padding: 2% 5%;
-    border-radius: 5px;
-    font-family: Alexandria;
+  .text {
+    width: Fixed (424px) px;
+    height: Hug (24px) px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  h1 {
+    width: 424px;
+    height: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: $body-font;
     font-size: 16px;
     font-weight: 700;
-    line-height: 32px;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-  }
-  input {
-    width: 600px;
-    height: 56px;
-    top: 585px;
-    left: 332px;
-    gap: 0px;
-    border-radius: 9px;
-    opacity: 0px;
-    padding: 0 10%;
-    border: 2px solid #cbd2e0;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-  }
-  input::placeholder {
-    width: 399px;
-    height: 26px;
-    gap: 0px;
-    opacity: 0px;
-    font-family: Alexandria;
-    font-size: 18px;
-    font-weight: 400;
     line-height: 24px;
     text-align: center;
-    color: #1a202c;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $secondary-color;
   }
-
-  label {
-    font-family: Alexandria;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-    text-align: right;
-    color: #858585;
-  }
-
-  .card3 {
-    width: 895px;
-    height: 349px;
-    top: 728px;
-    left: 121px;
-    gap: 0px;
-    opacity: 0px;
-    color: $primary-color;
-    margin-bottom: 10%;
-  }
-
-  .table {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: end;
-    width: 100%;
-    padding: 0 2%;
-  }
-
-  .row {
-    display: flex;
-    flex-direction: row;
-    margin: 3px 0;
-    border: 2px solid #cbd2e04f;
-    border-radius: 9px;
-    width: 100%;
-  }
-
-  .cell {
-    padding: 16px 10px;
-    width: 100%;
-    text-align: left;
-  }
-
-  .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: Hug (268px) px;
-    height: Hug (32px) px;
-    top: 1032px;
-    left: 421px;
+  .page-link {
+    width: Fixed (396px) px;
+    height: Hug (24px) px;
     gap: 8px;
     opacity: 0px;
   }
-  .page-item {
-    margin: 0 5px;
-    width: Hug (188px) px;
-    height: Hug (32px) px;
-    gap: 4px;
-    opacity: 0px;
-    padding: 10px 0px 0px 0px;
-    color: #262626;
-  }
-  .page-link {
-    display: block;
-    padding: 8px 12px;
+
+  .link {
     text-decoration: none;
-    width: Fixed (32px) px;
-    height: Fixed (32px) px;
-    font-family: Alexandria;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 16px;
-    text-align: left;
-    color: #262626;
-  }
-  .page-link:hover {
-    background-color: $primary-color;
-    color: white;
-    transition: background-color 0.5s, color 0.5s;
-    font-weight: bold;
-    border-radius: 50%;
-  }
+    color: $secondary-color;
+    transition: color 0.3s ease, transform 0.3s ease;
+    width: 396px;
+    height: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: $body-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    align-items: center;
 
-  .page-link.active {
-    background: #262626;
-    color: white;
-    font-weight: bold;
-    gap: 10px;
-    border-radius: 50%;
-  }
-
-  .page-link.disabled {
-    color: #ccc;
-    cursor: not-allowed;
-    pointer-events: none;
-  }
-
-  // Adjust for smaller screen sizes (tablet)
-  @media (max-width: 1200px) {
-    padding: 0 20px;
-    h1 {
-      font-size: 4vw; // 4% of viewport width for medium screens
+    &:hover {
+      color: $primary-color;
+      transform: scale(1.1);
     }
 
-    h2 {
-      font-size: 3.5vw;
-    }
-
-    p,
-    h5 {
-      font-size: 2vw;
-    }
-
-    span {
-      font-size: 1.2vw;
+    &:active {
+      color: #e74c3c;
     }
   }
-
   @media (max-width: 768px) {
-    padding: 0 10px;
-    h1 {
-      font-size: 6vw;
+    .container {
+      width: 60%;
     }
 
-    h2 {
-      font-size: 5vw;
-    }
-
-    p,
-    h5 {
-      font-size: 4vw;
-    }
-
-    span {
-      font-size: 2vw;
-    }
-  }
-
-  @media (max-width: 480px) {
-    padding: 0 5px;
-    h1 {
-      font-size: 8vw;
-    }
-
-    h2 {
-      font-size: 7vw;
-    }
-
-    p,
-    h5 {
-      font-size: 6vw;
-    }
-
-    span {
-      font-size: 3vw;
+    @media (max-width: 480px) {
+      .container {
+        width: 50%;
+      }
+      h1 {
+        font-size: 13px;
+      }
+      link {
+        font-size: 13px;
+      }
     }
   }
 }

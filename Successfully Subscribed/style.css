@@ -27,6 +27,8 @@ html {
   height: Fixed 565px px;
   max-width: 880px;
   max-height: 720px;
+  top: 209px;
+  left: 401px;
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 16px;
@@ -41,6 +43,24 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 16px;
+  padding: 6% 16px;
+}
+#congratulations .flexRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 5%;
+  width: 100%;
+  padding: 0 5px;
+}
+@media (max-width: 768px) {
+  #congratulations .flexRow {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 #congratulations .Exit-image {
   width: 24px;
@@ -121,19 +141,102 @@ html {
 #congratulations .link:active {
   color: #e74c3c;
 }
+#congratulations button {
+  display: block;
+  text-wrap: nowrap;
+  background-color: #2285fc;
+  color: white;
+  font-size: 20px;
+  width: Fixed 164px px;
+  height: Fixed 56px px;
+  top: 585px;
+  left: 155px;
+  padding: 2% 5%;
+  border-radius: 5px;
+  font-family: Alexandria;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+#congratulations input {
+  width: 600px;
+  height: 56px;
+  top: 585px;
+  left: 332px;
+  gap: 0px;
+  border-radius: 9px;
+  opacity: 0px;
+  padding: 0 10%;
+  border: 2px solid #cbd2e0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+@media (max-width: 768px) {
+  #congratulations input {
+    width: 300px;
+  }
+}
+#congratulations input::-moz-placeholder {
+  width: 399px;
+  height: 26px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Alexandria;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #1a202c;
+}
+#congratulations input::placeholder {
+  width: 399px;
+  height: 26px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Alexandria;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #1a202c;
+}
 @media (max-width: 768px) {
   #congratulations .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #congratulations .button {
+    width: 100%;
+  }
+}
+@media (min-device-width: 415px) and (max-device-width: 480px) {
+  #congratulations .container {
+    width: 90%;
+    margin-right: 8%;
+    padding: 10% 10%;
+  }
+}
+@media (min-device-width: 400px) and (max-device-width: 414px) {
+  #congratulations .container {
+    width: 80%;
+    margin-right: 15%;
+    padding: 10% 10%;
+  }
+  #congratulations .button {
     width: 60%;
   }
 }
-@media (max-width: 768px) and (max-width: 480px) {
+@media (min-device-width: 350px) and (max-device-width: 395px) {
   #congratulations .container {
-    width: 50%;
+    width: 70%;
+    margin-right: 24%;
+    padding: 10% 10%;
   }
-  #congratulations h1 {
-    font-size: 13px;
-  }
-  #congratulations link {
-    font-size: 13px;
+  #congratulations .button {
+    width: 60%;
   }
 }/*# sourceMappingURL=style.css.map */

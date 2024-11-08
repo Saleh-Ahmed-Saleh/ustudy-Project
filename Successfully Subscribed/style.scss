@@ -1,0 +1,239 @@
+$body-color: #ffffff;
+$body-font: "Alexandria", "Arial";
+$primary-color: #2285fc;
+$secondary-color: #262626;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  background-color: $body-color;
+  font-family: $body-font;
+}
+
+#congratulations {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+
+  .container {
+    width: Fixed (706px) px;
+    height: Fixed (565px) px;
+    max-width: 880px;
+    max-height: 720px;
+    top: 209px;
+    left: 401px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 16px;
+    gap: 16px;
+    border-radius: 12px;
+    opacity: 0px;
+    background-color: #ffff;
+    z-index: 2;
+  }
+
+  .flexColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 6% 16px;
+  }
+  .flexRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 5%;
+    width: 100%;
+    padding: 0 5px;
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  .Exit-image {
+    width: 24px;
+    height: 24px;
+    top: 8px;
+    left: 8px;
+    gap: 0px;
+    opacity: 0px;
+    img {
+      width: 13.15px;
+      height: 13.15px;
+      top: 5.42px;
+      left: 5.43px;
+      gap: 0px;
+      opacity: 0px;
+      cursor: pointer;
+    }
+  }
+  .image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    img {
+      width: 196px;
+      height: 201px;
+      gap: 0px;
+      opacity: 0px;
+    }
+  }
+
+  .text {
+    width: Fixed (424px) px;
+    height: Hug (24px) px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  h1 {
+    width: 424px;
+    height: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: $body-font;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $secondary-color;
+  }
+  .page-link {
+    width: Fixed (396px) px;
+    height: Hug (24px) px;
+    gap: 8px;
+    opacity: 0px;
+  }
+
+  .link {
+    text-decoration: none;
+    color: $secondary-color;
+    transition: color 0.3s ease, transform 0.3s ease;
+    width: 396px;
+    height: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: $body-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    align-items: center;
+
+    &:hover {
+      color: $primary-color;
+      transform: scale(1.1);
+    }
+
+    &:active {
+      color: #e74c3c;
+    }
+  }
+  button {
+    display: block;
+    text-wrap: nowrap;
+    background-color: $primary-color;
+    color: #ffff;
+    font-size: 20px;
+    width: Fixed (164px) px;
+    height: Fixed (56px) px;
+    top: 585px;
+    left: 155px;
+    padding: 2% 5%;
+    border-radius: 5px;
+    font-family: Alexandria;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+  }
+  input {
+    width: 600px;
+    height: 56px;
+    top: 585px;
+    left: 332px;
+    gap: 0px;
+    border-radius: 9px;
+    opacity: 0px;
+    padding: 0 10%;
+    border: 2px solid #cbd2e0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+
+    @media (max-width: 768px) {
+      width: 300px;
+    }
+  }
+  input::placeholder {
+    width: 399px;
+    height: 26px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Alexandria;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #1a202c;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .button {
+      width: 100%;
+    }
+  }
+  @media (min-device-width: 415px) and (max-device-width: 480px) {
+    .container {
+      width: 90%;
+      margin-right: 8%;
+      padding: 10% 10%;
+    }
+  }
+  @media (min-device-width: 400px) and (max-device-width: 414px) {
+    .container {
+      width: 80%;
+      margin-right: 15%;
+      padding: 10% 10%;
+    }
+    .button {
+      width: 60%;
+    }
+  }
+  @media (min-device-width: 350px) and (max-device-width: 395px) {
+    .container {
+      width: 70%;
+      margin-right: 24%;
+      padding: 10% 10%;
+    }
+    .button {
+      width: 60%;
+    }
+  }
+}

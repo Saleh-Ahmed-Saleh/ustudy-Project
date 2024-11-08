@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  background-color: #ffffff;
+  font-family: "Alexandria", "Arial";
+}
+
+#congratulations .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+#congratulations .container {
+  width: Fixed 706px px;
+  height: Fixed 565px px;
+  max-width: 880px;
+  max-height: 720px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 16px;
+  gap: 16px;
+  border-radius: 12px;
+  opacity: 0px;
+  background-color: white;
+  z-index: 2;
+}
+#congratulations .flexColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#congratulations .Exit-image {
+  width: 24px;
+  height: 24px;
+  top: 8px;
+  left: 8px;
+  gap: 0px;
+  opacity: 0px;
+}
+#congratulations .Exit-image img {
+  width: 13.15px;
+  height: 13.15px;
+  top: 5.42px;
+  left: 5.43px;
+  gap: 0px;
+  opacity: 0px;
+  cursor: pointer;
+}
+#congratulations .image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+#congratulations .image img {
+  width: 196px;
+  height: 201px;
+  gap: 0px;
+  opacity: 0px;
+}
+#congratulations .text {
+  width: Fixed 424px px;
+  height: Hug 24px px;
+  gap: 0px;
+  opacity: 0px;
+}
+#congratulations h1 {
+  width: 424px;
+  height: 24px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "Alexandria", "Arial";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #262626;
+}
+#congratulations .page-link {
+  width: Fixed 396px px;
+  height: Hug 24px px;
+  gap: 8px;
+  opacity: 0px;
+}
+#congratulations .link {
+  text-decoration: none;
+  color: #262626;
+  transition: color 0.3s ease, transform 0.3s ease;
+  width: 396px;
+  height: 24px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "Alexandria", "Arial";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  align-items: center;
+}
+#congratulations .link:hover {
+  color: #2285fc;
+  transform: scale(1.1);
+}
+#congratulations .link:active {
+  color: #e74c3c;
+}
+@media (max-width: 768px) {
+  #congratulations .container {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) and (max-width: 480px) {
+  #congratulations .container {
+    width: 50%;
+  }
+  #congratulations h1 {
+    font-size: 13px;
+  }
+  #congratulations link {
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=style.css.map */
